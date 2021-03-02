@@ -9,14 +9,12 @@
 ARG from_image=python:3.9.2-slim-buster
 FROM ${from_image}
 
-# Set expected environment variables to default values.
-# The actual values are set by the DataTier Manager at run-time.
-ENV DT_DATASET_ID=1
-ENV DT_ERROR_TEXT_FILE=/dataset/output/error.txt
-
 # All formatter images MUST place their
 # implementations (and expect to start) in /home/format-support
 WORKDIR /home/format-support
+
+# Copy source code in
+COPY source/ ./source/
 
 # Inject the entrypoint,
 # making sure anyone can read and execute it.

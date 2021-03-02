@@ -26,8 +26,6 @@ Python virtual environment: -
 
     $ IMAGE_NAME=${PWD##*/} docker-compose build
 
->   Ignore the warning about the IMAGE_TEST variable not being set
-
 ...and then, simulating the provision of the output directory that would
 normally be created by the DataTier Manager, we can run a specific test...
 
