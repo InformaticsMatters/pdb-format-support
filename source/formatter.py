@@ -17,6 +17,9 @@ event_formatter = logging.Formatter('%(asctime)s # %(levelname)s -EVENT- %(messa
 event_handler.setFormatter(event_formatter)
 event_logger.addHandler(event_handler)
 
+# Say Hello
+basic_logger.info('pdb-format-support')
+
 # Get and display the environment material
 # (guaranteed to be provided)
 # using the basic (non-event) logger
