@@ -34,7 +34,7 @@ basic_logger.info('DT_DATASET_OUTPUT_PATH=%s', dataset_output_path)
 # Now enter the formatting logic...
 # Here we use the event logger.
 event_logger.info('Progress %d%%', 0)
-time.sleep(4.0)
+time.sleep(1.0)
 event_logger.info('Progress %d%%', 50)
-time.sleep(4.0)
+time.sleep(1.0)
 event_logger.info('Progress %d%%', 100)
